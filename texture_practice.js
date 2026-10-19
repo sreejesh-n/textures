@@ -1,6 +1,7 @@
 const r = require("raylib");
 
 function setup(WIDTH, HEIGHT, title, FPS) {
+  r.SetTraceLogLevel(r.LOG_NONE);
   r.InitWindow(WIDTH, HEIGHT, title);
   r.SetTargetFPS(FPS);
 
