@@ -16,6 +16,9 @@ function drawTexture(target) {
   r.BeginTextureMode(target);
   r.ClearBackground(r.BLACK);
 
+  r.DrawCircle(100, 100, 60, r.RED);
+  r.DrawCircle(80, 80, 15, r.WHITE);
+
   r.EndTextureMode();
 }
 
@@ -23,7 +26,16 @@ function draw(world) {
   r.BeginDrawing();
   r.ClearBackground(r.DARKGRAY);
 
-  r.DrawTexture(world.target.texture, 10, 10, r.WHITE);
+  const source = {
+    x: 50,
+    y: 50,
+    width: 100,
+    height: 100,
+  };
+
+  const pos = { x: 50, y: 50 };
+
+  r.DrawTextureRec(world.target.texture, source, pos, r.WHITE);
 
   r.EndDrawing();
 }
