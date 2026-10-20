@@ -14,14 +14,14 @@ function setup(WIDTH, HEIGHT, title, FPS) {
 
 function drawTexture(target) {
   r.BeginTextureMode(target);
-  r.ClearBackground(r.WHITE);
+  r.ClearBackground(r.BLACK);
 
   r.EndTextureMode();
 }
 
 function draw(world) {
   r.BeginDrawing();
-  r.ClearBackground(r.BLACK);
+  r.ClearBackground(r.DARKGRAY);
 
   r.DrawTexture(world.target.texture, 10, 10, r.WHITE);
 
