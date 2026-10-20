@@ -47,7 +47,7 @@ function tearDown() {
 function main() {
   const WIDTH = 1000;
   const HEIGHT = 600;
-  const title = "Texture Practice";
+  const title = "Texture Practice 01";
   const FPS = 60;
 
   const world = setup(WIDTH, HEIGHT, title, FPS);
