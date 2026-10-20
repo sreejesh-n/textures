@@ -67,7 +67,7 @@ function tearDown() {
 function main() {
   const WIDTH = 800;
   const HEIGHT = 400;
-  const title = "Texture Practice 03";
+  const title = "Flipping";
   const FPS = 60;
 
   const world = setup(WIDTH, HEIGHT, title, FPS);
