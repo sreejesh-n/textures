@@ -40,10 +40,16 @@ function draw(world) {
     height: 200,
   };
 
-  const pos = { x: 50, y: 50 };
+  const vFlip = {
+    x: 0,
+    y: 0,
+    width: 200,
+    height: -200,
+  };
 
-  r.DrawTextureRec(world.target.texture, normal, pos, r.WHITE);
+  r.DrawTextureRec(world.target.texture, normal, { x: 50, y: 50 }, r.WHITE);
   r.DrawTextureRec(world.target.texture, hFlip, { x: 300, y: 50 }, r.WHITE);
+  r.DrawTextureRec(world.target.texture, vFlip, { x: 550, y: 50 }, r.WHITE);
 
   r.EndDrawing();
 }
