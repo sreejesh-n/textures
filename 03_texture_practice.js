@@ -12,11 +12,19 @@ function setup(WIDTH, HEIGHT, title, FPS) {
   return { target, screen };
 }
 
-function drawTexture() {}
+function drawTexture(target) {
+  r.BeginTextureMode(target);
+  r.ClearBackground(r.WHITE);
+
+  r.EndTextureMode();
+}
 
 function draw(world) {
   r.BeginDrawing();
   r.ClearBackground(r.BLACK);
+
+  r.DrawTexture(world.target.texture, 10, 10, r.WHITE);
+
   r.EndDrawing();
 }
 
